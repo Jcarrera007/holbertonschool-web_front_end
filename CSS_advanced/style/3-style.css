@@ -1,0 +1,39 @@
+/* CSS Custom Properties */
+:root {
+    --color-primary: #d73953;
+    --color-black: #090909;
+    --color-white: #ffffff;
+    --color-light-grey: #f3f3f3;
+    --color-dark-grey: #353535;
+    --text-color: var(--color-black);
+}
+
+/* Smooth scrolling behavior for fluid scroll experience */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Body styling */
+body {
+    color: var(--text-color);
+}
+
+/* Anchor elements styling */
+a {
+    color: var(--text-color);
+}
+
+/* Accessibility - visually hidden elements */
+.visually-hidden {
+    display: none;
+}
+
+/* Card category styling */
+.card-category {
+    color: var(--color-primary);
+}
+
+/* Section tagline styling */
+.section-tagline {
+    color: var(--color-primary);
+}
