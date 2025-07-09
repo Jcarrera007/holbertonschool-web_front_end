@@ -4,9 +4,6 @@
 
 This project is part of the Holberton School Web Front-End curriculum, focusing on advanced CSS concepts and techniques. The project involves building a complete, responsive website (Techium) while implementing various CSS features and best practices.
 
-## 🎯 Learning Objectives
-
-By the end of this project, you should be able to explain the following concepts without external help:
 
 ### 🎨 CSS Fundamentals
 - **Selectors, properties, and values**: Understanding how CSS selectors target HTML elements and how properties define styling rules
@@ -291,6 +288,3 @@ p::first-line { font-weight: bold; }
 
 This project is part of the Holberton School Web Front-End curriculum.
 
----
-
-*This README demonstrates comprehensive understanding of advanced CSS concepts through practical implementation in a real-world project.*
