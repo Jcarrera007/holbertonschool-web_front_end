@@ -22,6 +22,7 @@
     --section-tagline-transform: uppercase;
     --section-title-margin: 0;
     --section-title-color: var(--color-black);
+    --section-tagline-margin: 0;
 }
 
 /* HTML base font size */
@@ -90,6 +91,7 @@ a[href]:active {
     font-family: var(--font-family-title);
     text-transform: var(--section-tagline-transform);
     font-weight: var(--font-weight-bold);
+    margin: var(--section-tagline-margin);
 }
 
 /* Heading tags styling */
