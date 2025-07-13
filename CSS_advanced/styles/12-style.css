@@ -40,9 +40,21 @@ body {
 }
 
 /* Anchor elements styling */
-a {
+a[href] {
     color: var(--text-color);
     text-decoration: none;
+}
+
+a[href]:visited {
+    font-style: italic;
+}
+
+a[href]:hover {
+    text-decoration: underline;
+}
+
+a[href]:active {
+    background-color: var(--color-light-grey);
 }
 
 /* Accessibility - visually hidden elements */
