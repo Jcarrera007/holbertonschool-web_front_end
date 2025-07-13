@@ -1,101 +1,103 @@
-/* CSS Custom Properties */
+/* CSS Variable Definitions */
 :root {
-    --color-primary: #d73953;
-    --color-black: #090909;
-    --color-white: #ffffff;
-    --color-light-grey: #f3f3f3;
-    --color-dark-grey: #353535;
-    --text-color: var(--color-black);
-    --font-family-base: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    --font-family-title: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    --font-size-small: 1.2rem;
-    --font-size-medium: 1.6rem;
-    --font-size-large: 1.8rem;
-    --font-size-x-large: 2.3rem;
-    --font-size-xx-large: 4.8rem;
-    --font-weight-regular: 400;
-    --font-weight-bold: 700;
-    --line-height-small: 1.2;
-    --line-height-base: 1.5;
-    --line-height-big: 1.8;
-    --section-header-align: center;
-    --section-tagline-transform: uppercase;
-    --section-title-margin: 0;
-    --section-title-color: var(--color-black);
-    --section-tagline-margin: 0;
+    --primary-brand-color: #d73953;
+    --text-dark: #090909;
+    --pure-white: #ffffff;
+    --neutral-light: #f3f3f3;
+    --neutral-dark: #353535;
+    --default-text-color: var(--text-dark);
+    
+    /* Typography System */
+    --base-font-stack: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --heading-font-stack: Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    
+    /* Font Scale */
+    --text-xs: 1.2rem;
+    --text-base: 1.6rem;
+    --text-lg: 1.8rem;
+    --text-xl: 2.3rem;
+    --text-4xl: 4.8rem;
+    
+    /* Font Weights */
+    --weight-normal: 400;
+    --weight-bold: 700;
+    
+    /* Line Heights */
+    --leading-tight: 1.2;
+    --leading-normal: 1.5;
+    --leading-relaxed: 1.8;
+    
+    /* Layout Properties */
+    --header-alignment: center;
+    --tagline-case: uppercase;
+    --title-spacing: 0;
+    --title-text-color: var(--text-dark);
 }
 
-/* HTML base font size */
+/* Document Foundation */
 html {
     scroll-behavior: smooth;
-    font-size: 62.5%;
+    font-size: 62.5%; /* 10px base for rem calculations */
 }
 
-/* Body styling */
+/* Global Body Styles */
 body {
-    color: var(--text-color);
-    font-family: var(--font-family-base);
-    font-size: var(--font-size-medium);
-    font-weight: var(--font-weight-regular);
-    line-height: var(--line-height-base);
+    color: var(--default-text-color);
+    font-family: var(--base-font-stack);
+    font-size: var(--text-base);
+    font-weight: var(--weight-normal);
+    line-height: var(--leading-normal);
 }
 
-/* Anchor elements with hyperlinks styling */
-a[href] {
-    color: var(--text-color);
+/* Typography Hierarchy */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font-stack);
+    font-weight: var(--weight-bold);
+}
+
+/* Interactive Link Styling */
+a:link {
+    color: var(--default-text-color);
     text-decoration: none;
 }
 
-/* Visited state for links */
-a[href]:visited {
+a:visited {
     font-style: italic;
 }
 
-/* Hover state for links */
-a[href]:hover {
+a:hover {
     text-decoration: underline;
 }
 
-/* Active state for links */
-a[href]:active {
-    background-color: var(--color-light-grey);
+a:active {
+    background-color: var(--neutral-light);
 }
 
-/* Accessibility - visually hidden elements */
+/* Screen Reader Only Content */
 .visually-hidden {
     display: none;
 }
 
-/* Card category styling */
+/* Component Styles */
 .card-category {
-    color: var(--color-primary);
+    color: var(--primary-brand-color);
 }
 
-/* Section header styling */
 .section-header {
-    text-align: var(--section-header-align);
+    text-align: var(--header-alignment);
 }
 
-/* Section title styling */
 .section-title {
-    font-family: var(--font-family-title);
-    font-size: var(--font-size-xx-large);
-    font-weight: var(--font-weight-bold);
-    margin: var(--section-title-margin);
-    color: var(--section-title-color);
+    font-family: var(--heading-font-stack);
+    font-size: var(--text-4xl);
+    font-weight: var(--weight-bold);
+    margin: var(--title-spacing);
+    color: var(--title-text-color);
 }
 
-/* Section tagline styling */
 .section-tagline {
-    color: var(--color-primary);
-    font-family: var(--font-family-title);
-    text-transform: var(--section-tagline-transform);
-    font-weight: var(--font-weight-bold);
-    margin: var(--section-tagline-margin);
-}
-
-/* Heading tags styling */
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-family-title);
-    font-weight: var(--font-weight-bold);
+    color: var(--primary-brand-color);
+    font-family: var(--heading-font-stack);
+    text-transform: var(--tagline-case);
+    font-weight: var(--weight-bold);
 }
