@@ -3,6 +3,10 @@
 /* Design System Foundation */
 :root {
     /* Core Colors */
+    --color-primary: #d73953;
+    --color-black: #090909;
+    --color-white: #ffffff;
+    --color-light-grey: #f3f3f3;
     --brand-primary: #d73953;
     --neutral-900: #090909;
     --neutral-0: #ffffff;
@@ -19,6 +23,9 @@
     --font-normal: 400;
     --font-bold: 700;
     --leading-normal: 1.5;
+    
+    /* Navigation */
+    --nav-item-link-hover: var(--color-white);
     
     /* Layout */
     --content-center: center;
@@ -194,19 +201,19 @@ ul.row {
     padding: 0.5rem 1rem;
 }
 .nav .nav-link:hover {
-    color: var(--neutral-0);
+    color: var(--nav-item-link-hover);
 }
 .nav .nav-link::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
-    background-color: var(--neutral-0);
+    background-color: var(--color-white);
     width: 0;
-    height: 0.2rem;
+    height: 20%;
 }
 .nav .nav-item:hover .nav-link::before {
-    background-color: var(--brand-primary);
+    background-color: var(--color-primary);
     width: 100%;
 }
 
